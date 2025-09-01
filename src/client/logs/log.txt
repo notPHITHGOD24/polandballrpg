@@ -1,0 +1,25 @@
+21:12:29.906 [Game Handler] DEBUG: Determined gameDir: C:\Users\PHITHGOD24\AppData\Roaming/playminicraft/mods/Minicraft_Plus
+21:12:37.069 [Controller] DEBUG: No Controllers Detected, moving on.
+21:12:37.273 [Resource Handler/Resource Pack] DEBUG: Refreshing from [file:/C:/Users/PHITHGOD24/Documents/polandballrpg-indev-0,0.1pa-mik/src/client/build/resources/main/]
+21:12:43.303 [Analytics] TRACE: Ping success for GameStartup, with value 1.
+21:12:44.390 [Resource Handler/Resource Pack] WARN: Potentially incompatible image detected: assets/textures/gui/osk.png in pack: Default: image size (48x28) is not in multiple of 8.
+21:13:14.449 [Sprite] DEBUG: Updating all LinkedSprite.
+21:13:14.455 [Resource Handler/Localization] TRACE: Loading language...
+21:13:14.736 [Resource Handler/Skin] DEBUG: Refreshing skins.
+21:13:15.541 [Tiles] DEBUG: Initializing tile list...
+21:13:15.986 [Tiles] INFO: Invalid tile requested: SAND
+21:13:17.757 [Items] ERROR: Requested invalid item with name: 'EMERALD ORE'
+21:13:22.437 [World] DEBUG: Resetting...
+21:13:22.548 [Resource Handler/Localization] TRACE: Loading language...
+21:13:27.522 [Resource Handler/Resource Pack] WARN: Potentially incompatible image detected: assets/textures/gui/osk.png in pack: Default: image size (48x28) is not in multiple of 8.
+21:14:04.320 [Sprite] DEBUG: Updating all LinkedSprite.
+21:14:04.323 [Resource Handler/Localization] TRACE: Loading language...
+21:14:04.384 [Achievement] DEBUG: Updating data of achievement with id: minicraft.achievement.upgrade.
+21:14:04.385 [Achievement] DEBUG: Updating data of achievement with id: minicraft.achievement.plant_seed.
+21:14:04.385 [Achievement] DEBUG: Updating data of achievement with id: minicraft.achievement.skin.
+21:14:04.385 [Achievement] DEBUG: Updating data of achievement with id: minicraft.achievement.bow.
+21:14:04.386 [Achievement] DEBUG: Updating data of achievement with id: minicraft.achievement.woodcutter.
+21:14:04.388 [Achievement] DEBUG: Updating data of achievement with id: minicraft.achievement.planks.
+21:14:04.388 [Achievement] DEBUG: Updating data of achievement with id: minicraft.achievement.benchmarking.
+21:14:04.444 [Achievement] DEBUG: Updating data of achievement with id: minicraft.achievement.doors.
+21:14:11.123 [Game Handler] INFO: Window closing

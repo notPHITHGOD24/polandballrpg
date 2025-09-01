@@ -1,0 +1,27 @@
+21:07:53.289 [Game Handler] DEBUG: Determined gameDir: C:\Users\PHITHGOD24\AppData\Roaming/playminicraft/mods/Minicraft_Plus
+21:08:04.084 [Controller] DEBUG: No Controllers Detected, moving on.
+21:08:06.424 [Resource Handler/Resource Pack] DEBUG: Refreshing from [jar:file:///C:/Users/PHITHGOD24/Documents/polandballrpg-indev-0,0.1pa-mik/src/client/build/libs/polandballrpg-0.0.4-alpha-build8252025825.jar!/]
+21:08:13.557 [Analytics] TRACE: Ping success for GameStartup, with value 1.
+21:08:37.370 [Resource Handler/Resource Pack] WARN: Potentially incompatible image detected: assets/textures/gui/osk.png in pack: Default: image size (48x28) is not in multiple of 8.
+21:08:41.841 [Sprite] DEBUG: Updating all LinkedSprite.
+21:08:42.026 [Resource Handler/Localization] TRACE: Loading language...
+21:08:42.289 [Resource Handler/Skin] DEBUG: Refreshing skins.
+21:08:42.541 [Tiles] DEBUG: Initializing tile list...
+21:08:42.611 [Tiles] INFO: Invalid tile requested: SAND
+21:08:43.591 [Items] ERROR: Requested invalid item with name: 'EMERALD ORE'
+21:08:47.257 [World] DEBUG: Resetting...
+21:08:47.275 [Resource Handler/Localization] TRACE: Loading language...
+21:08:56.962 [Resource Handler/Resource Pack] WARN: Potentially incompatible image detected: assets/textures/gui/osk.png in pack: Default: image size (48x28) is not in multiple of 8.
+21:08:59.760 [Sprite] DEBUG: Updating all LinkedSprite.
+21:08:59.774 [Resource Handler/Localization] TRACE: Loading language...
+21:08:59.813 [Achievement] DEBUG: Updating data of achievement with id: minicraft.achievement.upgrade.
+21:08:59.814 [Achievement] DEBUG: Updating data of achievement with id: minicraft.achievement.plant_seed.
+21:08:59.814 [Achievement] DEBUG: Updating data of achievement with id: minicraft.achievement.skin.
+21:08:59.815 [Achievement] DEBUG: Updating data of achievement with id: minicraft.achievement.bow.
+21:08:59.823 [Achievement] DEBUG: Updating data of achievement with id: minicraft.achievement.woodcutter.
+21:08:59.843 [Achievement] DEBUG: Updating data of achievement with id: minicraft.achievement.planks.
+21:08:59.844 [Achievement] DEBUG: Updating data of achievement with id: minicraft.achievement.benchmarking.
+21:08:59.845 [Achievement] DEBUG: Updating data of achievement with id: minicraft.achievement.doors.
+21:09:11.055 [Network] DEBUG: Fetching release list from GitHub...
+21:12:08.042 [Game Handler] INFO: Window closing
+21:12:08.078 [Game Handler] DEBUG: Main game loop ended; Killing Game :3...
