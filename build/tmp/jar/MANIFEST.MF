@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Main-Class: minicraft.core.Game
-Implementation-Title: minicraft-plus
-Implementation-Version: 0.0.4-alpha-ireland
-SplashScreen-Image: Minicraft_Splash_Screen_2.png
-
