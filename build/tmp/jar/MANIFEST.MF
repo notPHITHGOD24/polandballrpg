@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Implementation-Title: polandball-rpg
+Implementation-Version: 0.0.4-alpha-build8252025825
+Main-Class: minicraft.core.Game
+SplashScreen-Image: Minicraft_Splash_Screen_2.png
+

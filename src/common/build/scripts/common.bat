@@ -70,7 +70,7 @@ goto fail
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\common-0.0.4-alpha-ireland.jar;%APP_HOME%\lib\annotations-23.0.0.jar;%APP_HOME%\lib\tinylog-impl-2.4.1.jar;%APP_HOME%\lib\tinylog-api-2.4.1.jar;%APP_HOME%\lib\discord-game-sdk4j-v0.5.5.jar;%APP_HOME%\lib\animal-sniffer-annotations-1.18.jar
+set CLASSPATH=%APP_HOME%\lib\common-0.0.4-alpha-build8252025825.jar;%APP_HOME%\lib\annotations-23.0.0.jar;%APP_HOME%\lib\tinylog-impl-2.4.1.jar;%APP_HOME%\lib\tinylog-api-2.4.1.jar;%APP_HOME%\lib\discord-game-sdk4j-v0.5.5.jar;%APP_HOME%\lib\animal-sniffer-annotations-1.18.jar
 
 
 @rem Execute common

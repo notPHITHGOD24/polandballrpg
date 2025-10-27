@@ -15,6 +15,7 @@ import minicraft.entity.mob.Player;
 import minicraft.entity.mob.Russia;
 import minicraft.entity.mob.Sheep;
 import minicraft.entity.mob.Skeleton;
+import minicraft.entity.mob.Ghost;
 import minicraft.entity.mob.Slime;
 import minicraft.entity.mob.Snake;
 import minicraft.entity.mob.Zombie;
@@ -82,9 +83,10 @@ public class Spawner extends Furniture {
 							m instanceof Creeper ? new LinkedSprite(SpriteType.Item, "creeper_spawner") :
 								m instanceof Skeleton ? new LinkedSprite(SpriteType.Item, "skeleton_spawner") :
 									m instanceof Snake ? new LinkedSprite(SpriteType.Item, "snake_spawner") :
-										m instanceof Knight ? new LinkedSprite(SpriteType.Item, "knight_spawner") :
-                                                                 m instanceof Chicken ? new LinkedSprite(SpriteType.Item, "knight_spawner") :
-																        m instanceof Russia ? new LinkedSprite(SpriteType.Item, "snake_spawner") :
+									    m instanceof Ghost ? new LinkedSprite(SpriteType.Item, "sheep_spawner") :
+										    m instanceof Knight ? new LinkedSprite(SpriteType.Item, "knight_spawner") :
+                                                m instanceof Chicken ? new LinkedSprite(SpriteType.Item, "knight_spawner") :
+													m instanceof Russia ? new LinkedSprite(SpriteType.Item, "snake_spawner") :
 											new LinkedSprite(SpriteType.Item, "air_wizard_spawner"), 7, 2);
 		health = 100;
 		initMob(m);

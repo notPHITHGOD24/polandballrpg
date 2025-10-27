@@ -4,6 +4,7 @@ import minicraft.core.Game;
 import minicraft.core.Updater;
 import minicraft.core.io.Localization;
 import minicraft.core.io.Settings;
+import minicraft.core.io.Sound;
 import minicraft.entity.Entity;
 import minicraft.entity.ItemEntity;
 import minicraft.entity.furniture.Chest;
@@ -13,6 +14,7 @@ import minicraft.entity.furniture.Spawner;
 import minicraft.entity.mob.AirWizard;
 import minicraft.entity.mob.Russia;
 import minicraft.entity.mob.Cow;
+import minicraft.entity.mob.Chicken;
 import minicraft.entity.mob.Creeper;
 import minicraft.entity.mob.EnemyMob;
 import minicraft.entity.mob.Knight;
@@ -26,6 +28,7 @@ import minicraft.entity.mob.Skeleton;
 import minicraft.entity.mob.Slime;
 import minicraft.entity.mob.Snake;
 import minicraft.entity.mob.Zombie;
+import minicraft.entity.mob.Ghost;
 import minicraft.gfx.Point;
 import minicraft.gfx.Rectangle;
 import minicraft.gfx.Screen;
@@ -427,6 +430,13 @@ public class Level {
 
 			entitiesToAdd.remove(entity);
 		}
+		
+		
+		if (Updater.tickCount % 32401 == 0) {
+			Sound.play("day");
+		}
+
+		
 
 		if (fullTick) {
 			// This prevents any entity (or tile) tick action from happening on a server level with no players.
@@ -473,6 +483,7 @@ public class Level {
 		}
 		return false;
 	}
+
 
 	public double distanceOfClosestPlayer(Entity entity) {
 		double distance = Math.hypot(w, h);
@@ -593,6 +604,8 @@ public class Level {
 	public Tile getTile(int x, int y) {
 		return chunkManager.getTile(x, y);
 	}
+	
+	
 
 	/**
 	 * @deprecated Currently unused, but this should be prevented being used.

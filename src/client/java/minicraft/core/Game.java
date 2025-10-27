@@ -114,15 +114,22 @@ public class Game {
 
 		ResourcePackDisplay.initPacks();
 		ResourcePackDisplay.reloadResources();
+		Logging.GAMEHANDLER.debug("Loading Resourses or something!");
+
 
 		Tiles.initTileList();
+		Logging.GAMEHANDLER.debug("Loading Tiles");
+
 
 		// Load the selected language.
 		Initializer.createAndDisplayFrame();
+		Logging.GAMEHANDLER.debug("LOADING LANG!");
 
 		setDisplay(new TitleDisplay()); // Sets menu to the title screen.
+		Logging.GAMEHANDLER.debug("ITS ALLL READY!!!!");
 
 		Renderer.initScreen();
+		Logging.GAMEHANDLER.debug("Renderer.initScreen()");
 
 		World.resetGame(); // "half"-starts a new game, to set up initial variables
 		player.eid = 0;
@@ -135,6 +142,7 @@ public class Game {
 
 		Initializer.launchWindow();
 		// Actually start the game.
+		Logging.GAMEHANDLER.debug("Initializer.run()!!");
 		Initializer.run();
 
 		Logging.GAMEHANDLER.debug("Main game loop ended; Killing Game :3...");

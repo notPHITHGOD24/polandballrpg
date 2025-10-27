@@ -16,6 +16,7 @@ import minicraft.entity.mob.Cow;
 import minicraft.entity.mob.Creeper;
 import minicraft.entity.mob.Chicken;
 import minicraft.entity.mob.Russia;
+import minicraft.entity.mob.Ghost;
 import minicraft.entity.mob.Knight;
 import minicraft.entity.mob.Pig;
 import minicraft.entity.mob.Player;
@@ -47,6 +48,7 @@ public class FurnitureItem extends Item {
 		items.add(new FurnitureItem(new Spawner(new Skeleton(1))));
 		items.add(new FurnitureItem(new Spawner(new Snake(1))));
 		items.add(new FurnitureItem(new Spawner(new Knight(1))));
+		items.add(new FurnitureItem(new Spawner(new Ghost(1))));
 
 		items.add(new FurnitureItem(new Chest()));
 		items.add(new FurnitureItem(new DungeonChest(null, true)));
