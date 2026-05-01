@@ -2029,6 +2029,14 @@
     }},
     "rewards": {"recipes": {"Iron Armor_1": ["Iron_10"]}}
   },
+  "minicraft.advancements.recipes.copper_armor": {
+    "requirements": [["has_copper"]],
+    "criteria": {"has_copper": {
+      "trigger": "inventory_changed",
+      "conditions": {"items": [{"items": ["Copper"]}]}
+    }},
+    "rewards": {"recipes": {"Copper Armor_1": ["Copper_10"]}}
+  },
   "minicraft.advancements.recipes.magenta_dye_from_blue_red_white_dye": {
     "requirements": [[
       "has_white_dye",
@@ -2751,6 +2759,26 @@
       "Iron Ore_3"
     ]}}
   },
+  "minicraft.advancements.recipes.copper": {
+    "requirements": [[
+      "has_coal",
+      "has_copper_ore"
+    ]],
+    "criteria": {
+      "has_coal": {
+        "trigger": "inventory_changed",
+        "conditions": {"items": [{"items": ["Coal"]}]}
+      },
+      "has_copper_ore": {
+        "trigger": "inventory_changed",
+        "conditions": {"items": [{"items": ["Copper Ore"]}]}
+      }
+    },
+    "rewards": {"recipes": {"Copper_1": [
+      "Coal_1",
+      "Copper Ore_3"
+    ]}}
+  },
   "minicraft.advancements.recipes.stone_door": {
     "requirements": [["has_stone_brick"]],
     "criteria": {"has_stone_brick": {
@@ -3123,6 +3151,37 @@
     "rewards": {"recipes": {"Light Gray Bed_1": [
       "Wood_5",
       "Light Gray Wool_3"
+    ]}}
+  },
+  
+  "minicraft.advancements.recipes.purified_water": {
+    "requirements": [[
+      "has_dirty_water"
+    ]],
+    "criteria": {
+      "has_dirty_water": {
+        "trigger": "inventory_changed",
+        "conditions": {"items": [{"items": ["Dirty water"]}]}
+      }
+    },
+    "rewards": {"recipes": {"Purified water_1": [
+      "Dirty water_1",
+      "Coal_1"
+    ]}}
+  },
+	
+  "minicraft.advancements.recipes.drinking_bottle": {
+    "requirements": [[
+      "has_wood"
+    ]],
+    "criteria": {
+      "has_wood": {
+        "trigger": "inventory_changed",
+        "conditions": {"items": [{"items": ["Wood"]}]}
+      }
+    },
+    "rewards": {"recipes": {"Drinking Bottle_1": [
+      "Wood_1"
     ]}}
   }
 }

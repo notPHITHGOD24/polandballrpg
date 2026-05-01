@@ -985,6 +985,7 @@ public class Load {
 			player.extraHealth = Integer.parseInt(data.remove(0));
 		if (worldVer.compareTo(new Version("2.0.4-dev7")) >= 0)
 			player.hunger = Integer.parseInt(data.remove(0));
+		player.water = Integer.parseInt(data.remove(0));
 		player.armor = Integer.parseInt(data.remove(0));
 
 		if (worldVer.compareTo(new Version("2.0.5-dev5")) >= 0 || player.armor > 0 || worldVer.compareTo(new Version("2.0.5-dev4")) == 0 && data.size() > 5) {

@@ -93,7 +93,7 @@ public class Initializer extends Game {
 		try {
 
 			final long CLIENT_ID = 1398732720577712179L;
-			final String LARGE_TEXT = "PolandballRPG " + DEMOVERSION + ".";
+			final String LARGE_TEXT = "PolandballRPG " + MODVERSION + ".";
 			final String SMALL_TEXT = "A Minicraft+ mod";
 
 			Core.initDownload();

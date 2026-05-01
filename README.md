@@ -15,6 +15,7 @@ the [wiki.gg Wiki](https://minicraft.wiki.gg/wiki/).
     * Score
     * Survival
 * Saving and loading
+* Drinking water lolololololol
 * Multiplayer mode and an account system (Now supported
   by [El-Virus](https://www.github.com/ElVir-Software/minicraft-plus-online))
 * More mobs

@@ -27,9 +27,7 @@ public class Game {
 
 	public static final Version VERSION = new Version("2.3.0-dev2");
 	
-	public static final String MODVERSION = "0.0.3-alpha";
-	
-	public static final String DEMOVERSION = "Demo 1";
+	public static final String MODVERSION = "0.0.5-alpha";
 	
 
 	public static InputHandler input; // Input used in Game, Player, and just about all the *Menu classes.
@@ -123,10 +121,10 @@ public class Game {
 
 		// Load the selected language.
 		Initializer.createAndDisplayFrame();
-		Logging.GAMEHANDLER.debug("LOADING LANG!");
+		Logging.GAMEHANDLER.debug("LOADING LANGUAGE");
 
 		setDisplay(new TitleDisplay()); // Sets menu to the title screen.
-		Logging.GAMEHANDLER.debug("ITS ALLL READY!!!!");
+		Logging.GAMEHANDLER.debug("System's all ready");
 
 		Renderer.initScreen();
 		Logging.GAMEHANDLER.debug("Renderer.initScreen()");

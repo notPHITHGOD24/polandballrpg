@@ -56,7 +56,7 @@ public class Recipes {
 		craftRecipes.add(new Recipe("Plank Wall_1", "plank_3"));
 		craftRecipes.add(new Recipe("Wood Door_1", "plank_5"));
 		craftRecipes.add(new Recipe("Wood Fence_1", "plank_3"));
-		craftRecipes.add(new Recipe("Glass Water_1", "glass bottle_1"));
+		craftRecipes.add(new Recipe("Drinking Bottle_1", "Wood_1"));
 
 		workbenchRecipes.add(new Recipe("Workbench_1", "Wood_10"));
 		workbenchRecipes.add(new Recipe("Torch_2", "Wood_1", "coal_1"));
@@ -210,6 +210,9 @@ public class Recipes {
 		anvilRecipes.add(new Recipe("Copper Hoe_1", "Wood_2", "copper_1"));
 		anvilRecipes.add(new Recipe("Copper Pickaxe_1", "Wood_2", "copper_3"));
 		anvilRecipes.add(new Recipe("Copper Shovel_1", "Wood_2", "copper_1"));
+		anvilRecipes.add(new Recipe("Copper Bow_1", "Wood_5", "copper_3", "string_2"));
+		anvilRecipes.add(new Recipe("Copper Claymore_1", "Copper Sword_1", "shard_15"));
+		anvilRecipes.add(new Recipe("Copper Armor_1", "Copper_10"));
 		anvilRecipes.add(new Recipe("Iron Armor_1", "iron_10"));
 		anvilRecipes.add(new Recipe("Gold Armor_1", "gold_10"));
 		anvilRecipes.add(new Recipe("Gem Armor_1", "gem_65"));
@@ -251,7 +254,8 @@ public class Recipes {
 		ovenRecipes.add(new Recipe("cooked fish_1", "raw fish_1", "coal_1"));
 		ovenRecipes.add(new Recipe("bread_1", "wheat_4"));
 		ovenRecipes.add(new Recipe("Baked Potato_1", "Potato_1"));
-
+		ovenRecipes.add(new Recipe("Purified water_1", "Dirty water_1", "coal_1"));
+						
 		enchantRecipes.add(new Recipe("Gold Apple_1", "apple_1", "gold_8"));
 		enchantRecipes.add(new Recipe("awkward potion_1", "glass bottle_1", "Lapis_3"));
 		enchantRecipes.add(new Recipe("speed potion_1", "awkward potion_1", "Cactus_5"));

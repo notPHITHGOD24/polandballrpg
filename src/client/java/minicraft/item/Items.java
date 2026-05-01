@@ -46,7 +46,8 @@ public class Items {
 		addAll(WateringCanItem.getAllInstances());
 		addAll(DyeItem.getAllInstances());
 		addAll(WoolItem.getAllInstances());
-		addAll(WaterItem.getAllInstances());
+		addAll(BottleItem.getAllInstances());
+		addAll(DrinkItem.getAllInstances());
 	}
 
 	public static ArrayList<Item> getAll() {

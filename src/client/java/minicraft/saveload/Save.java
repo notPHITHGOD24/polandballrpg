@@ -343,6 +343,7 @@ public class Save {
 		data.add(String.valueOf(player.health));
 		data.add(String.valueOf(player.extraHealth));
 		data.add(String.valueOf(player.hunger));
+		data.add(String.valueOf(player.water));
 		data.add(String.valueOf(player.armor));
 		data.add(String.valueOf(player.armorDamageBuffer));
 		data.add(String.valueOf(player.curArmor == null ? "NULL" : player.curArmor.getName()));

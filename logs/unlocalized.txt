@@ -1,0 +1,1 @@
+[Localization.java#L51] [minicraft.core.io.Localization#getLocalized]:  en-US: 'Drinking Bottle' is unlocalized.

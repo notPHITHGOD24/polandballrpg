@@ -16,7 +16,10 @@ public class ArmorItem extends StackableItem {
 		ArrayList<Item> items = new ArrayList<>();
 
 		items.add(new ArmorItem("Leather Armor", new LinkedSprite(SpriteType.Item, "leather_armor"), .3f, 1));
-		items.add(new ArmorItem("Snake Armor", new LinkedSprite(SpriteType.Item, "snake_armor"), .4f, 2));
+		items.add(new ArmorItem("Snake Armor", new LinkedSprite(SpriteType.Item,
+"snake_armor"), .4f, 2));
+		items.add(new ArmorItem("Copper Armor", new
+LinkedSprite(SpriteType.Item, "copper_armor"), .3f, 1));
 		items.add(new ArmorItem("Iron Armor", new LinkedSprite(SpriteType.Item, "iron_armor"), .5f, 3));
 		items.add(new ArmorItem("Gold Armor", new LinkedSprite(SpriteType.Item, "gold_armor"), .7f, 4));
 		items.add(new ArmorItem("Gem Armor", new LinkedSprite(SpriteType.Item, "gem_armor"), 1f, 5));
