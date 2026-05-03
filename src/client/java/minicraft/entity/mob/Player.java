@@ -88,6 +88,8 @@ public class Player extends Mob implements ItemHolder, ClientTickable {
 
 	public static LinkedSprite[][] sprites;
 	public static LinkedSprite[][] carrySprites;
+	public static LinkedSprite[][] armorSprites;
+	public static LinkedSprite[][] armorCarrySprites;
 
 	private final Inventory inventory;
 
@@ -144,6 +146,8 @@ public class Player extends Mob implements ItemHolder, ClientTickable {
 	public int maxFishingTicks = 120;
 	public int fishingTicks = maxFishingTicks;
 	public int fishingLevel;
+	
+	public boolean armorOn;
 
 	private LinkedSprite hudSheet;
 
@@ -297,12 +301,20 @@ public class Player extends Mob implements ItemHolder, ClientTickable {
 			return;
 		} else if (input.getMappedKey("F3-H").isClicked()) {
 			World.scheduleLevelChange(-1);
+			// Remove the comment  thingy "//" if you want to debug something :D armorOn = !armorOn; 
 			return;
 		}
 
 		super.tick(); // Ticks Mob.java
 
 		tickMultiplier();
+		
+		// Turn on da armor mode!!!
+		if (armor == 0) {
+			armorOn = false;
+		} else {
+			armorOn = true;
+		}
 
 		if ((baseHealth + extraHealth) > maxHealth) {
 			extraHealth = maxHealth - 10;
@@ -931,6 +943,8 @@ public class Player extends Mob implements ItemHolder, ClientTickable {
 		// Assign the skin to the states.
 		sprites = selectedSkin[0];
 		carrySprites = selectedSkin[1];
+		armorSprites = selectedSkin[2];
+		armorCarrySprites = selectedSkin[3];
 	}
 
 	@Override
@@ -976,11 +990,16 @@ public class Player extends Mob implements ItemHolder, ClientTickable {
 
 		// Makes the player white if they have just gotten hurt
 		if (hurtTime > playerHurtTime - 10) {
-			col = Color.WHITE; // Make the sprite white.
+			col = Color.RED; // Make the sprite white.
 		}
 
-		LinkedSprite[][] spriteSet = activeItem instanceof FurnitureItem ? carrySprites : sprites;
+		LinkedSprite[][] spriteSet;
 
+        if (activeItem instanceof FurnitureItem) {
+            spriteSet = armorOn ? armorCarrySprites : carrySprites;
+        } else {
+            spriteSet = armorOn ? armorSprites : sprites;
+        }
 		// Renders falling
 		LinkedSprite curSprite;
 		if (onFallDelay > 0) {
@@ -1236,6 +1255,9 @@ public class Player extends Mob implements ItemHolder, ClientTickable {
 		super.onExploded(tnt, dmg);
 		payStamina(dmg * 2);
 	}
+	
+	
+		
 
 	/**
 	 * Hurt the player.

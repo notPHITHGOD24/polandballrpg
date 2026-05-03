@@ -8,7 +8,6 @@ the [wiki.gg Wiki](https://minicraft.wiki.gg/wiki/).
 
 ## Major features
 
-# NOTE: These features are the same as the base game for now.......
 * Four new gamemodes
     * Creative
     * Hardcore
@@ -39,19 +38,6 @@ the [wiki.gg Wiki](https://minicraft.wiki.gg/wiki/).
 Our game only supports Windows, MacOS and Linux. Furthermore, newer platform versions are required for controllers.
 
 For Java, you may check out [system requirements for Java](https://www.java.com/en/download/help/sysreq.html).
-
-## goals and ideas and stuff
-
-Take a look at the [ideas](ideas/) folder
-
-## Getting the game and run the game
-
-Head over [releases](https://github.com/notPHITHGOD24/polandballrpg/releases) and find the latest version of
-PolandballRPG+.
-There, you can find an file called `polandball.exe`. Click the file, and after you have downloaded the file, you
-must double-click the file in downloads folder to open it.
-You must first confirm that you have [Java](https://www.java.com/en/download/) (at least version 8) installed on your
-computer.
 
 ## How to build/run in development
 

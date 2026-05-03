@@ -22,11 +22,6 @@ public class PalmSaplingTile extends Tile {
 	}
 
 	@Override
-	public boolean connectsToGrass(Level level, int x, int y) {
-		return onType.connectsToGrass(level, x, y);
-	}
-
-	@Override
 	public boolean connectsToFluid(Level level, int x, int y) {
 		return onType.connectsToFluid(level, x, y);
 	}

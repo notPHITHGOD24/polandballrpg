@@ -129,8 +129,8 @@ public class PalmTile extends Tile {
 	}
 
 	public void hurt(Level level, int x, int y, int dmg) {
-		if (random.nextInt(100) == 0)
-			level.dropItem(x * 16 + 8, y * 16 + 8, Items.get("Apple"));
+		//if (random.nextInt(100) == 0)
+			//level.dropItem(x * 16 + 8, y * 16 + 8, Items.get("Apple")); Leave it for future :P
 
 		int damage = level.getData(x, y) + dmg;
 		int palmHealth = 20;

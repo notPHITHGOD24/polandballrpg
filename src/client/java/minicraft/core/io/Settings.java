@@ -47,6 +47,7 @@ public final class Settings {
 	 * @param option The setting to get.
 	 * @return The value of the setting
 	 */
+
 	public static Object get(String option) {
 		return options.get(option.toLowerCase()).getValue();
 	}

@@ -86,13 +86,13 @@ public class SkinDisplay extends Display {
 		Renderer.spriteLinker.setSkin("skin.minicraft.skin.old_polandball", defaultSheet);
 		Renderer.spriteLinker.setSkin("skin.minicraft.skin.minecraft_steve", defaultSheet);
 		Renderer.spriteLinker.setSkin("skin.minicraft.skin.minecraft_alex", defaultSheet);
-		Renderer.spriteLinker.setSkin("skin.minicraft.skin.rusk", defaultSheet);
+		Renderer.spriteLinker.setSkin("skin.minicraft.skin.uk", defaultSheet);
 
 		skins.put("minicraft.skin.polandball", Mob.compileMobSpriteAnimations(0, 0, "skin.minicraft.skin.polandball"));
 		skins.put("minicraft.skin.old_polandball", Mob.compileMobSpriteAnimations(0, 4, "skin.minicraft.skin.old_polandball"));
 		skins.put("minicraft.skin.minecraft_steve", Mob.compileMobSpriteAnimations(0, 8, "skin.minicraft.skin.minecraft_steve"));
 		skins.put("minicraft.skin.minecraft_alex", Mob.compileMobSpriteAnimations(0, 12, "skin.minicraft.skin.minecraft_alex"));
-		skins.put("minicraft.skin.rusk", Mob.compileMobSpriteAnimations(8, 8, "skin.minicraft.skin.rusk"));
+		skins.put("minicraft.skin.uk", Mob.compileMobSpriteAnimations(8, 16, "skin.minicraft.skin.uk"));
 
 		// Create folder, and see if it was successful.
 		if (FOLDER_LOCATION.mkdirs()) {
@@ -293,15 +293,19 @@ public class SkinDisplay extends Display {
 	// First array is one of the four animations.
 	@NotNull
 	public static LinkedSprite[][][] getSkinAsMobSprite() {
-		LinkedSprite[][][] mobSprites = new LinkedSprite[2][][];
+		LinkedSprite[][][] mobSprites = new LinkedSprite[4][][];
 
 		if (!skins.keySet().contains(selectedSkin)) selectedSkin = defaultSkins.get(0);
 		if (defaultSkins.contains(selectedSkin)) {
 			mobSprites[0] = Mob.compileMobSpriteAnimations(0, defaultSkins.indexOf(selectedSkin) * 4, "skin." + selectedSkin);
 			mobSprites[1] = Mob.compileMobSpriteAnimations(0, defaultSkins.indexOf(selectedSkin) * 4 + 2, "skin." + selectedSkin);
+			mobSprites[2] = Mob.compileMobSpriteAnimations(8, defaultSkins.indexOf(selectedSkin) * 4, "skin." + selectedSkin);
+			mobSprites[3] = Mob.compileMobSpriteAnimations(8, defaultSkins.indexOf(selectedSkin) * 4 + 2, "skin." + selectedSkin);
 		} else {
 			mobSprites[0] = Mob.compileMobSpriteAnimations(0, 0, "skin." + selectedSkin);
 			mobSprites[1] = Mob.compileMobSpriteAnimations(0, 2, "skin." + selectedSkin);
+			mobSprites[2] = Mob.compileMobSpriteAnimations(8, 0, "skin." + selectedSkin);
+			mobSprites[3] = Mob.compileMobSpriteAnimations(8, 2, "skin." + selectedSkin);
 		}
 
 		return mobSprites;
